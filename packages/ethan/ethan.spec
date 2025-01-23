@@ -47,3 +47,4 @@ fi
 /usr/local/bin/ethan
 /usr/lib/systemd/system/ethan.service
 
+%exclude %{buildroot}/usr/share/licenses/ethan/attribution.txt
