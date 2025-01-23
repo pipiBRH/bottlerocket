@@ -37,4 +37,4 @@ path = "../variants.rs"
 settings-defaults = { path = "../../packages/settings-defaults" }
 settings-plugins = { path = "../../packages/settings-plugins" }
 settings-migrations = { path = "../../packages/settings-migrations" }
-ethan = { path = "../../packages/cups" }
+ethan = { path = "../../packages/ethan" }
