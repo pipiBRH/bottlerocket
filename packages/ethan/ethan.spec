@@ -22,6 +22,7 @@ echo "No prep needed."
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ethan %{SOURCE1}
 
 %install
+echo "aaaaaaaaa"
 mkdir -p %{buildroot}/usr/local/bin
 install -m 0755 ethan %{buildroot}/usr/local/bin/ethan
 
@@ -33,15 +34,12 @@ systemctl enable ethan.service || true
 systemctl start ethan.service || true
 
 %preun
-if [ "$1" = 0 ]; then
-    systemctl stop ethan.service || true
-    systemctl disable ethan.service || true
-fi
+echo "No preun needed."
+
 
 %postun
-if [ "$1" = 0 ]; then
-    rm -f /usr/lib/systemd/system/ethan.service
-fi
+echo "No postun needed."
+
 
 %files
 /usr/local/bin/ethan
