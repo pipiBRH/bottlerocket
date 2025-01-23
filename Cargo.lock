@@ -63,6 +63,7 @@ dependencies = [
  "settings-defaults",
  "settings-migrations",
  "settings-plugins",
+ "ethan"
 ]
 
 [[package]]
