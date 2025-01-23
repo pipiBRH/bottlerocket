@@ -5,7 +5,7 @@ Summary: A simple ethan World for Bottlerocket
 License: MIT
 Source: none
 
-Source1: ethan
+Source1: ethan.go
 Source2: ethan.service
 
 Requires(post): systemd
@@ -19,11 +19,11 @@ A ethan World program in Go, installed on Bottlerocket.
 echo "No prep needed."
 
 %build
-echo "No build needed. We already have the 'ethan' binary."
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ethan %{SOURCE1}
 
 %install
 mkdir -p %{buildroot}/usr/local/bin
-install -m 0755 %{SOURCE1} %{buildroot}/usr/local/bin/ethan
+install -m 0755 ethan %{buildroot}/usr/local/bin/ethan
 
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
@@ -31,7 +31,6 @@ install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
 %post
 systemctl enable ethan.service || true
 systemctl start ethan.service || true
-rm -f "%{buildroot}/usr/share/licenses/ethan/attribution.txt" || true
 
 %preun
 if [ "$1" = 0 ]; then
