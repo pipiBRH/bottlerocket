@@ -22,8 +22,6 @@ echo "No prep needed."
 echo "No build needed. We already have the 'ethan' binary."
 
 %install
-rm -f "%{buildroot}/usr/share/licenses/ethan/attribution.txt" || true
-
 mkdir -p %{buildroot}/usr/local/bin
 install -m 0755 %{SOURCE1} %{buildroot}/usr/local/bin/ethan
 
@@ -33,6 +31,7 @@ install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
 %post
 systemctl enable ethan.service || true
 systemctl start ethan.service || true
+rm -f "%{buildroot}/usr/share/licenses/ethan/attribution.txt" || true
 
 %preun
 if [ "$1" = 0 ]; then
