@@ -20,7 +20,7 @@ included-packages = [
     "kernel-5.15",
     "kubelet-1.24",
     "release",
-    "ethan"
+    "packages/ethan"
 ]
 kernel-parameters = [
     "console=tty0",
