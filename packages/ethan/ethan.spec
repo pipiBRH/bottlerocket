@@ -1,4 +1,4 @@
-Name: ethan-world
+Name: ethan
 Version: 0.1.0
 Release: 1
 Summary: A simple ethan World for Bottlerocket
@@ -46,3 +46,5 @@ fi
 %files
 /usr/local/bin/ethan
 /usr/lib/systemd/system/ethan.service
+%dir /usr/share/licenses/ethan-world
+%doc /usr/share/licenses/ethan-world/attribution.txt
