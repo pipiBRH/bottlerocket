@@ -13,14 +13,16 @@ exclude = ["README.md"]
 grub-set-private-var = true
 
 [package.metadata.build-variant]
+packages = [
+    "ethan"
+]
 included-packages = [
     "aws-iam-authenticator",
     "cni",
     "cni-plugins",
     "kernel-5.15",
     "kubelet-1.24",
-    "release",
-    "packages/ethan"
+    "release"
 ]
 kernel-parameters = [
     "console=tty0",

@@ -62,8 +62,7 @@ version = "0.1.0"
 dependencies = [
  "settings-defaults",
  "settings-migrations",
- "settings-plugins",
- "ethan"
+ "settings-plugins"
 ]
 
 [[package]]
