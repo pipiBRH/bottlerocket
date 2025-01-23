@@ -46,3 +46,5 @@ fi
 %files
 /usr/local/bin/ethan
 /usr/lib/systemd/system/ethan.service
+
+%doc /usr/share/licenses/ethan/attribution.txt
