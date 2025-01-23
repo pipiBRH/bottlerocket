@@ -1,0 +1,10 @@
+[Unit]
+Description=ethan service
+
+[Service]
+ExecStart=/usr/local/bin/hello
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
