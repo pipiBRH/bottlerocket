@@ -5,7 +5,7 @@ Summary: A simple ethan World for Bottlerocket
 License: MIT
 Source: none
 
-Source1: ethan.go
+Source1: ethan
 Source2: ethan.service
 Source3: attribution.txt
 
