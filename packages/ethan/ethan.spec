@@ -7,6 +7,7 @@ Source: none
 
 Source1: ethan.go
 Source2: ethan.service
+Source2: attribution.txt
 
 Requires(post): systemd
 Requires(preun): systemd
@@ -27,6 +28,10 @@ install -m 0755 ethan %{buildroot}/usr/local/bin/ethan
 
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
+
+mkdir -p %{buildroot}/usr/share/licenses/ethan/
+install -m 0644 %{SOURCE3} %{buildroot}/usr/share/licenses/ethan/attribution.txt
+
 
 %post
 systemctl enable ethan.service || true

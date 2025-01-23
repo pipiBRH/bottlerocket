@@ -1,0 +1,2 @@
+bottlerocket-ethan - https://www.gnu.org/software/ethan/
+SPDX-License-Identifier: GPL-3.0-or-later
