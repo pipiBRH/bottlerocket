@@ -7,7 +7,6 @@ Source: none
 
 Source1: ethan
 Source2: ethan.service
-Source3: attribution.txt
 
 Requires(post): systemd
 Requires(preun): systemd
@@ -24,7 +23,7 @@ echo "No build needed."
 
 %install
 mkdir -p %{buildroot}/usr/local/bin
-install -m 0755 ethan %{buildroot}/usr/local/bin/ethan
+install -m 0755 %{SOURCE1} %{buildroot}/usr/local/bin/ethan
 
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
