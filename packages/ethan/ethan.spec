@@ -39,3 +39,4 @@ echo "No postun needed."
 
 %files
 /usr/lib/systemd/system/ethan.service
+/x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/ethan/attribution.txt
