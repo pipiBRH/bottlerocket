@@ -7,7 +7,7 @@ Source: none
 
 Source1: ethan.go
 Source2: ethan.service
-Source2: attribution.txt
+Source3: attribution.txt
 
 Requires(post): systemd
 Requires(preun): systemd
