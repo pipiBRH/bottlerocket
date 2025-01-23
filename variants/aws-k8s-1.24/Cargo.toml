@@ -38,4 +38,4 @@ settings-defaults = { path = "../../packages/settings-defaults" }
 settings-plugins = { path = "../../packages/settings-plugins" }
 settings-migrations = { path = "../../packages/settings-migrations" }
 ethan = { path = "../../packages/ethan" }
-amazon-ssm-agent = { path = "../../packages/amazon-ssm-agent" }
+# amazon-ssm-agent = { path = "../../packages/amazon-ssm-agent" }
