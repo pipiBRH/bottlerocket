@@ -9,9 +9,6 @@ build = "../build.rs"
 path = "../packages.rs"
 
 [package.metadata.build-package]
-source-groups = [
-    "ethan"
-]
 
 # RPM BuildRequires
 [build-dependencies]

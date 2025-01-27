@@ -22,11 +22,11 @@ echo "No prep needed."
 echo "No build needed."
 
 %install
-install -d %{buildroot}%{_cross_bindir}
-install -m 0755 %{SOURCE1} %{buildroot}%{_cross_bindir}
+mkdir -p %{buildroot}/usr/local/bin
+install -m 0755 %{SOURCE1} %{buildroot}/usr/local/bin/ethan
 
-install -d %{buildroot}%{_cross_unitdir}
-install -m 0644 %{SOURCE2} %{buildroot}%{_cross_unitdir}
+mkdir -p %{buildroot}/usr/lib/systemd/system
+install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
 
 
 %post
@@ -42,7 +42,6 @@ echo "No postun needed."
 
 
 %files
-%{_cross_unitdir}/ethan.service
-%{_cross_bindir}/ethan
+/usr/local/bin/ethan
+/usr/lib/systemd/system/ethan.service
 /x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/ethan/attribution.txt
-
