@@ -22,11 +22,11 @@ echo "No prep needed."
 echo "No build needed."
 
 %install
-install -d %{buildroot}%{_cross_bindir}
-install -p -m 0755 %{SOURCE1} %{buildroot}%{_cross_bindir}
+install -d %{buildroot}/usr/local/bin
+install -m 0755 %{SOURCE1} %{buildroot}/usr/local/bin/demo
 
-install -d %{buildroot}%{_cross_unitdir}
-install -p -m 0644 %{SOURCE2} %{buildroot}%{_cross_unitdir}
+install -d %{buildroot}/usr/lib/systemd/system
+install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/demo.service
 
 
 %post
@@ -42,6 +42,6 @@ echo "No postun needed."
 
 
 %files
-%{_cross_bindir}/demo
-%{_cross_unitdir}/demo.service
+/usr/local/bin/demo
+/usr/lib/systemd/system/demo.service
 /x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/demo/attribution.txt
