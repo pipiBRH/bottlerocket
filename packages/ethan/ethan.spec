@@ -43,6 +43,6 @@ echo "No postun needed."
 
 %files
 %{_cross_unitdir}/ethan.service
+%{_cross_bindir}/ethan
 /x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/ethan/attribution.txt
-%{_cross_bindir}/host-ctr/ethan
 
