@@ -19,8 +19,7 @@ included-packages = [
     "cni-plugins",
     "kernel-5.15",
     "kubelet-1.24",
-    "release",
-    "ethan"
+    "release"
 ]
 kernel-parameters = [
     "console=tty0",
