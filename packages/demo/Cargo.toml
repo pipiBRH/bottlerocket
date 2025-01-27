@@ -1,5 +1,5 @@
 [package]
-name = "ethan"
+name = "demo"
 version = "0.1.0"
 edition = "2021"
 publish = false
@@ -9,9 +9,6 @@ build = "../build.rs"
 path = "../packages.rs"
 
 [package.metadata.build-package]
-source-groups = [
-    "ethan"
-]
 
 # RPM BuildRequires
 [build-dependencies]

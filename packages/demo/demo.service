@@ -1,8 +1,8 @@
 [Unit]
-Description=ethan service
+Description=demo service
 
 [Service]
-ExecStart=/usr/local/bin/ethan
+ExecStart=/usr/local/bin/demo
 Restart=always
 RestartSec=5
 
