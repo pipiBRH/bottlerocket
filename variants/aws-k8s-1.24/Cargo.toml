@@ -37,5 +37,4 @@ path = "../variants.rs"
 settings-defaults = { path = "../../packages/settings-defaults" }
 settings-plugins = { path = "../../packages/settings-plugins" }
 settings-migrations = { path = "../../packages/settings-migrations" }
-demo = { path = "../../packages/demo" }
-# amazon-ssm-agent = { path = "../../packages/amazon-ssm-agent" }
+ethan = { path = "../../packages/ethan" }

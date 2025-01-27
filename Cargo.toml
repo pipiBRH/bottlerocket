@@ -3,7 +3,7 @@ resolver = "1"
 members = [
     "packages/settings-defaults",
     "packages/settings-plugins",
-    "packages/demo",
+    "packages/ethan",
 
     "variants/aws-dev",
     "variants/aws-ecs-1",
