@@ -2,7 +2,7 @@
 Description=ethan service
 
 [Service]
-ExecStart=/usr/local/bin/ethan
+ExecStart=/usr/bin/ethan
 Restart=always
 RestartSec=5
 
