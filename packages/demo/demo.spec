@@ -44,7 +44,5 @@ echo "No postun needed."
 %files
 %{_cross_unitdir}/demo.service
 /x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/demo/attribution.txt
-
-%files bin
 %{_cross_bindir}/host-ctr/demo
 
