@@ -22,8 +22,8 @@ echo "No prep needed."
 echo "No build needed."
 
 %install
-mkdir -p %{buildroot}/usr/local/bin
-install -m 0755 %{SOURCE1} %{buildroot}/usr/local/bin/ethan
+mkdir -p %{buildroot}/usr/bin
+install -m 0755 %{SOURCE1} %{buildroot}/usr/bin/ethan
 
 mkdir -p %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
@@ -42,6 +42,6 @@ echo "No postun needed."
 
 
 %files
-/usr/local/bin/ethan
+/usr/bin/ethan
 /usr/lib/systemd/system/ethan.service
 /x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/ethan/attribution.txt
