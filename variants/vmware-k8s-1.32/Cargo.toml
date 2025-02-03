@@ -53,4 +53,4 @@ settings-migrations = { path = "../../packages/settings-migrations" }
 ethan = { path = "../../packages/ethan" }
 
 [dependencies]
-ethan = { path = "../../packages/ethan" }
+# ethan = { path = "../../packages/ethan" }
