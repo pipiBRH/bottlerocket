@@ -9,7 +9,7 @@ registry = "750890591789.dkr.ecr.ap-northeast-1.amazonaws.com"
 
 [sdk]
 name = "bottlerocket-sdk"
-version = "0.50.0"
+version = "0.50.1"
 vendor = "bottlerocket"
 
 [[kit]]
