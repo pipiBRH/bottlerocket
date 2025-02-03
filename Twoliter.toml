@@ -18,3 +18,9 @@ vendor = "bottlerocket"
 name = "bottlerocket-core-kit"
 version = "5.4.1"
 vendor = "bottlerocket"
+
+
+[[kit]]
+name = "bottlerocket-ethan"
+version = "5.4.1"
+vendor = "bottlerocket"
