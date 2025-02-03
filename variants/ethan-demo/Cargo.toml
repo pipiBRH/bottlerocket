@@ -14,20 +14,20 @@ grub-set-private-var = true
 
 [package.metadata.build-variant]
 included-packages = [
-    # "aws-iam-authenticator",
-    # "cni",
-    # "cni-plugins",
-    # "kernel-5.15",
-    # "kubelet-1.24",
+# core
     "release",
-    # "ethan"
+    "kernel-6.1",
+# k8s
+    "cni",
+    "cni-plugins",
+    "kubelet-1.32",
+    "aws-iam-authenticator",
 ]
 kernel-parameters = [
     "console=tty0",
     "console=ttyS0,115200n8",
     "net.ifnames=0",
     "netdog.default-interface=eth0:dhcp4,dhcp6?",
-    "systemd.unified_cgroup_hierarchy=0",
     "quiet",
 ]
 
@@ -35,4 +35,7 @@ kernel-parameters = [
 path = "../variants.rs"
 
 [build-dependencies]
-ethan = { path = "../../packages/ethan" }
+settings-defaults = { path = "../../packages/settings-defaults" }
+settings-plugins = { path = "../../packages/settings-plugins" }
+settings-migrations = { path = "../../packages/settings-migrations" }
+# ethan = { path = "../../packages/ethan" }
