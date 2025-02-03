@@ -22,16 +22,15 @@ echo "No prep needed."
 echo "No build needed."
 
 %install
-mkdir -p %{buildroot}/usr/bin
+install -d %{buildroot}/usr/bin
 install -m 0755 %{SOURCE1} %{buildroot}/usr/bin/ethan
 
-mkdir -p %{buildroot}/usr/lib/systemd/system
+install -d %{buildroot}/usr/lib/systemd/system
 install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
 
 
 %post
-systemctl enable ethan.service || true
-systemctl start ethan.service || true
+echo "post needed."
 
 %preun
 echo "No preun needed."
