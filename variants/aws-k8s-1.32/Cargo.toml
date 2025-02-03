@@ -26,7 +26,9 @@ included-packages = [
     "kubelet-1.32",
     "aws-iam-authenticator",
 
-    "ethan",
+    # "ethan",
+
+    "amazon-ssm-agent",
 ]
 kernel-parameters = [
     "console=tty0",
@@ -43,4 +45,4 @@ path = "../variants.rs"
 settings-defaults = { path = "../../packages/settings-defaults" }
 settings-plugins = { path = "../../packages/settings-plugins" }
 settings-migrations = { path = "../../packages/settings-migrations" }
-ethan = { path = "../../packages/ethan" }
+# ethan = { path = "../../packages/ethan" }
