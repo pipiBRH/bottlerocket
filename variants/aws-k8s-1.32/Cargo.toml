@@ -26,7 +26,7 @@ included-packages = [
     "kubelet-1.32",
     "aws-iam-authenticator",
 
-    # "ethan",
+    "ethan",
 ]
 kernel-parameters = [
     "console=tty0",
