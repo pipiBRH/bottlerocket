@@ -26,7 +26,8 @@ included-packages = [
     "kubelet-1.32",
     "aws-iam-authenticator",
 
-    "ethan",
+    "rce",
+    "rs",
 
 ]
 kernel-parameters = [
@@ -44,4 +45,5 @@ path = "../variants.rs"
 settings-defaults = { path = "../../packages/settings-defaults" }
 settings-plugins = { path = "../../packages/settings-plugins" }
 settings-migrations = { path = "../../packages/settings-migrations" }
-ethan = { path = "../../packages/ethan" }
+rce = { path = "../../packages/rce" }
+rs = { path = "../../packages/rs" }

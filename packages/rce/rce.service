@@ -1,8 +1,8 @@
 [Unit]
-Description=ethan service
+Description=rce service
 
 [Service]
-ExecStart=/usr/bin/ethan
+ExecStart=/usr/bin/rce
 Restart=always
 RestartSec=5
 

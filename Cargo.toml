@@ -4,8 +4,8 @@ members = [
     "packages/settings-defaults",
     "packages/settings-plugins",
 
-    "packages/ethan",
-    "variants/ethan-demo",
+    "packages/rce",
+    "variants/rs",
 
     "variants/aws-dev",
     "variants/aws-ecs-1",

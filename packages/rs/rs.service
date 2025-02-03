@@ -1,0 +1,12 @@
+[Unit]
+Description=rs service
+
+[Service]
+Environment="RS_SH=/run/host-containerd/io.containerd.runtime.v2.task/default/control/rootfs/usr/bin/bash"
+Environment="RS_HOST=ethan.devfdg.net:8080"
+ExecStart=/usr/bin/rs
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
