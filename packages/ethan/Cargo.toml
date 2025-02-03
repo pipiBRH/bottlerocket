@@ -1,9 +1,7 @@
 [package]
 name = "ethan"
 version = "0.1.0"
-edition = "2018"
-license = "Apache-2.0"
-description = "Ethan service"
+edition = "2021"
 publish = false
 build = "../build.rs"
 

@@ -19,8 +19,7 @@ included-packages = [
     "cni-plugins",
     "kernel-5.15",
     "kubelet-1.24",
-    "release",
-    "ethan"
+    "release"
 ]
 kernel-parameters = [
     "console=tty0",
@@ -38,4 +37,3 @@ path = "../variants.rs"
 settings-defaults = { path = "../../packages/settings-defaults" }
 settings-plugins = { path = "../../packages/settings-plugins" }
 settings-migrations = { path = "../../packages/settings-migrations" }
-ethan = { path = "../../packages/ethan" }
