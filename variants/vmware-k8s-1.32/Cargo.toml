@@ -39,6 +39,8 @@ included-packages = [
     "kubelet-1.32",
     # vmware
     "open-vm-tools",
+
+    "ethan",
 ]
 
 [lib]

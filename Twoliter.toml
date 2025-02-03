@@ -4,6 +4,9 @@ release-version = "1.31.0"
 [vendor.bottlerocket]
 registry = "public.ecr.aws/bottlerocket"
 
+[vendor.ethan]
+registry = "750890591789.dkr.ecr.ap-northeast-1.amazonaws.com/bottlerocket-core-kit"
+
 [sdk]
 name = "bottlerocket-sdk"
 version = "0.50.0"
@@ -18,3 +21,8 @@ vendor = "bottlerocket"
 name = "bottlerocket-core-kit"
 version = "5.4.1"
 vendor = "bottlerocket"
+
+[[kit]]
+name = "bottlerocket-ethan"
+version = "5.4.1"
+vendor = "ethan"
