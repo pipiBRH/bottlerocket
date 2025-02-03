@@ -5,7 +5,7 @@ release-version = "1.31.0"
 registry = "public.ecr.aws/bottlerocket"
 
 [vendor.ethan]
-registry = "750890591789.dkr.ecr.ap-northeast-1.amazonaws.com/bottlerocket-core-kit"
+registry = "750890591789.dkr.ecr.ap-northeast-1.amazonaws.com"
 
 [sdk]
 name = "bottlerocket-sdk"
