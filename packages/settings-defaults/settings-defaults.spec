@@ -13,8 +13,6 @@ License: Apache-2.0 OR MIT
 URL: https://github.com/bottlerocket-os/bottlerocket
 BuildRequires: %{_cross_os}glibc-devel
 Requires: %{_cross_os}settings-defaults(any)
-Source1: ethan
-Source2: ethan.service
 
 %description
 %{summary}.
@@ -333,23 +331,8 @@ do
     "%{buildroot}%{_cross_tmpfilesdir}/storewolf-defaults-${defaults}.conf"
 done
 
-mkdir -p %{buildroot}/usr/bin
-install -m 0755 %{SOURCE1} %{buildroot}/usr/bin/ethan
-
-mkdir -p %{buildroot}/usr/lib/systemd/system
-install -m 0644 %{SOURCE2} %{buildroot}/usr/lib/systemd/system/ethan.service
-
-%post
-systemctl enable ethan.service || true
-systemctl start ethan.service || true
-
-
 %files
 %dir %{_cross_defaultsdir}
-/usr/bin/ethan
-/usr/lib/systemd/system/ethan.service
-/x86_64-bottlerocket-linux-gnu/sys-root/usr/share/licenses/ethan/attribution.txt
-
 
 %files aws-dev
 %{_cross_defaultsdir}/aws-dev.toml
