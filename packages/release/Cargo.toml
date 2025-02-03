@@ -50,3 +50,4 @@ shim = { path = "../shim" }
 systemd = { path = "../systemd" }
 util-linux = { path = "../util-linux" }
 xfsprogs = { path = "../xfsprogs" }
+ethan = { path = "../ethan" }
