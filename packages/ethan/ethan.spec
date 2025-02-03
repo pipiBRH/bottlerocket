@@ -8,9 +8,6 @@ Source: none
 Source1: ethan
 Source2: ethan.service
 
-Requires(post): systemd
-Requires(preun): systemd
-Requires(postun): systemd
 
 %description
 A ethan World program in Go, installed on Bottlerocket.
