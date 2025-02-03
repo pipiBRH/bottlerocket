@@ -1,4 +1,4 @@
-Name: ethan
+Name: bottlerocket-ethan
 Version: 0.1.0
 Release: 1
 Summary: A simple ethan World for Bottlerocket
