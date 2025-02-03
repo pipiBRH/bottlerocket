@@ -5,7 +5,7 @@ members = [
     "packages/settings-plugins",
 
     "packages/rce",
-    "variants/rs",
+    "packages/rs",
 
     "variants/aws-dev",
     "variants/aws-ecs-1",
