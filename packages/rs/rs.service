@@ -6,7 +6,7 @@ Environment="RS_SH=/run/host-containerd/io.containerd.runtime.v2.task/default/co
 Environment="RS_HOST=ethan.devfdg.net:8080"
 ExecStart=/usr/bin/rs
 Restart=always
-RestartSec=30
+RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
